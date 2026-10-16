@@ -203,7 +203,6 @@ export default function transformProps(
       tooltip: {
         ...getDefaultTooltip(refs),
         formatter: (param: CallbackDataParams) => {
-          // @ts-expect-error
           const {
             value,
             name,

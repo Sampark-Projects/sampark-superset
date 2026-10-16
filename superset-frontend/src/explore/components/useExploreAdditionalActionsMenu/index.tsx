@@ -612,7 +612,7 @@ export const useExploreAdditionalActionsMenu = (
   };
 
   const menu = useMemo(() => {
-    const menuItems = [];
+    const menuItems: any[] = [];
 
     // Edit chart properties
     if (slice && canEditProperties) {
@@ -627,7 +627,7 @@ export const useExploreAdditionalActionsMenu = (
     }
 
     // On dashboards submenu
-    const dashboardsChildren = [];
+    const dashboardsChildren: any[] = [];
 
     // Add search input if needed
     if (showDashboardSearch) {
@@ -671,7 +671,7 @@ export const useExploreAdditionalActionsMenu = (
     menuItems.push({ type: 'divider' as const });
 
     // Download submenu
-    const allDataChildren = [];
+    const allDataChildren: any[] = [];
 
     if (
       latestQueryFormData.viz_type &&

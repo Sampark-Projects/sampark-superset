@@ -491,7 +491,7 @@ const FilterControls: FC<FilterControlsProps> = ({
         </div>
       ),
     }));
-    const dividerItems = [];
+    const dividerItems: { id: string; element: React.ReactElement }[] = [];
     if (
       (crossFilters.length > 0 || nativeFiltersInScope.length > 0) &&
       chartCustomizationValues.length > 0

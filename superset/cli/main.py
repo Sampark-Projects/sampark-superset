@@ -59,7 +59,7 @@ def create_app() -> Any:
 )
 @with_appcontext
 def superset() -> None:
-    """\033[1;37mThe Apache Superset CLI\033[0m"""
+    """\033[1;37mThe Apache Sampark CLI\033[0m"""
     # NOTE: codes above are ANSI color codes for bold white in CLI header ^^^
 
 

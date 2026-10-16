@@ -25,11 +25,11 @@ from superset.mcp_service.app import get_default_instructions, init_fastmcp_serv
 
 
 def test_get_default_instructions_with_default_branding():
-    """Test that default branding produces Apache Superset in instructions."""
+    """Test that default branding produces Apache Sampark in instructions."""
     instructions = get_default_instructions()
 
-    assert "Apache Superset" in instructions
-    assert "Apache Superset MCP" in instructions
+    assert "Apache Sampark" in instructions
+    assert "Apache Sampark MCP" in instructions
     assert "model context protocol" in instructions.lower()
 
 
@@ -40,8 +40,8 @@ def test_get_default_instructions_with_custom_branding():
 
     assert custom_branding in instructions
     assert f"{custom_branding} MCP" in instructions
-    # Should not contain default Apache Superset branding
-    assert "Apache Superset" not in instructions
+    # Should not contain default Apache Sampark branding
+    assert "Apache Sampark" not in instructions
 
 
 def test_get_default_instructions_with_enterprise_branding():
@@ -152,8 +152,8 @@ def test_init_fastmcp_server_with_custom_app_name():
 
             # Verify instructions use custom branding
             assert custom_app_name in mock_mcp._mcp_server.instructions
-            # Should not contain default Apache Superset branding
-            assert "Apache Superset" not in mock_mcp._mcp_server.instructions
+            # Should not contain default Apache Sampark branding
+            assert "Apache Sampark" not in mock_mcp._mcp_server.instructions
 
 
 def test_init_fastmcp_server_derives_server_name_from_app_name():

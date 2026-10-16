@@ -54,7 +54,7 @@ export const supersetClientQuery: BaseQueryFn<
     ...rest,
     endpoint: `${endpoint}${urlParams ? `?q=${rison.encode(urlParams)}` : ''}`,
     method,
-    parseMethod,
+    parseMethod: parseMethod as ParseMethod,
     signal: api.signal,
   })
     .then(data => ({

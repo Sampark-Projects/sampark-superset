@@ -261,7 +261,7 @@ function TaskList({ addDangerToast, addSuccessToast, user }: TaskListProps) {
               : displayText;
 
           // Build tooltip with all identifiers
-          const tooltipLines = [];
+          const tooltipLines: string[] = [];
           if (task_name) tooltipLines.push(`Name: ${task_name}`);
           tooltipLines.push(`Key: ${task_key}`);
           tooltipLines.push(`UUID: ${uuid}`);

@@ -19,8 +19,8 @@
 
 import cls from 'classnames';
 import { t } from '@apache-superset/core/translation';
-import { styled, useTheme } from '@apache-superset/core/theme';
-import { Loading as LoaderSvg } from '../assets';
+import { styled } from '@apache-superset/core/theme';
+import { Spin } from '../Spin';
 import type { LoadingProps, SizeOption } from './types';
 
 const SIZE_MAP: Record<SizeOption, string> = {
@@ -68,8 +68,6 @@ export function Loading({
   size = 'm',
   muted = false,
 }: LoadingProps) {
-  const theme = useTheme();
-
   // Determine size from size prop
   const spinnerSize = SIZE_MAP[size];
 
@@ -78,19 +76,11 @@ export function Loading({
 
   // Render spinner content
   const renderSpinner = () => {
-    // Precedence: explicit image prop > brandSpinnerSvg > brandSpinnerUrl > default SVG
     if (image) {
       return <img src={image} alt={`${t('Loading')}...`} />;
     }
-    if (theme.brandSpinnerSvg) {
-      const svgDataUri = `data:image/svg+xml;base64,${btoa(theme.brandSpinnerSvg)}`;
-      return <img src={svgDataUri} alt={`${t('Loading')}...`} />;
-    }
-    if (theme.brandSpinnerUrl) {
-      return <img src={theme.brandSpinnerUrl} alt={`${t('Loading')}...`} />;
-    }
-    // Default: use the imported SVG component
-    return <LoaderSvg />;
+    // Default: use the imported Spin component for a circular loader
+    return <Spin size={size === 'l' ? 'large' : size === 's' ? 'small' : 'default'} />;
   };
 
   return (

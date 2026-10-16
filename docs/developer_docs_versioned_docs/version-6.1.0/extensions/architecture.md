@@ -24,7 +24,7 @@ under the License.
 
 # Architecture
 
-Apache Superset's extension system is designed to enable powerful customization while maintaining stability, security, and performance. This page explains the architectural principles, system design, and technical mechanisms that make the extension ecosystem possible.
+Apache Sampark's extension system is designed to enable powerful customization while maintaining stability, security, and performance. This page explains the architectural principles, system design, and technical mechanisms that make the extension ecosystem possible.
 
 ## Architectural Principles
 

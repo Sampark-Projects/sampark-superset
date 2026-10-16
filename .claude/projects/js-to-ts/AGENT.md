@@ -1,6 +1,6 @@
 # JavaScript to TypeScript Migration Agent Guide
 
-**Complete technical reference for converting JavaScript/JSX files to TypeScript/TSX in Apache Superset frontend.**
+**Complete technical reference for converting JavaScript/JSX files to TypeScript/TSX in Apache Sampark frontend.**
 
 **Agent Role:** Atomic migration unit - migrate the core file + ALL related tests/mocks as one cohesive unit. Use `git mv` to preserve history, NO `git commit`. NO global import changes. Report results upon completion.
 

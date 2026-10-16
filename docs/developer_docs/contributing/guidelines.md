@@ -253,7 +253,7 @@ When writing about UI elements:
 
 Only use title case for:
 
-- Product names (Apache Superset)
+- Product names (Apache Sampark)
 - Proper nouns
 - Acronyms (SQL, API, CSV)
 - Input labels, buttons and UI tabs are all caps

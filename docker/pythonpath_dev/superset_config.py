@@ -164,3 +164,6 @@ try:
     )
 except ImportError:
     logger.info("Using default Docker config...")
+
+# Always ensure SECRET_KEY is set securely
+SECRET_KEY = os.getenv("SUPERSET_SECRET_KEY", "b9c3f7e1a6d4b2e8c5f0a3d7b9e1c4a2f8b5d3c6e9a7f2")

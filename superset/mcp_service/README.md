@@ -19,10 +19,10 @@ under the License.
 
 # Superset MCP Service
 
-> **What is this?** The MCP service allows an AI Agent to directly interact with Apache Superset, enabling natural language queries and commands for data visualization.
+> **What is this?** The MCP service allows an AI Agent to directly interact with Apache Sampark, enabling natural language queries and commands for data visualization.
 
-> **How does it work?** This service is part of the Apache Superset codebase. You need to:
-> 1. Have Apache Superset installed and running
+> **How does it work?** This service is part of the Apache Sampark codebase. You need to:
+> 1. Have Apache Sampark installed and running
 > 2. Connect an agent such as Claude Desktop to your Superset instance using this MCP service
 > 3. Then Claude can create charts, query data, and manage dashboards
 
@@ -95,7 +95,7 @@ cd superset-frontend && npm ci && npm run build && cd ..
 # 4. Configure Superset manually
 # Create superset_config.py in your current directory:
 cat > superset_config.py << 'EOF'
-# Apache Superset Configuration
+# Apache Sampark Configuration
 SECRET_KEY = '<your secret here - hint: `secrets.token_urlsafe(42)`>'
 
 # Session configuration for local development

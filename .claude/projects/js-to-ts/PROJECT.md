@@ -1,6 +1,6 @@
 # JavaScript to TypeScript Migration Project
 
-Progressive migration of 219 JS/JSX files to TypeScript in Apache Superset frontend.
+Progressive migration of 219 JS/JSX files to TypeScript in Apache Sampark frontend.
 
 ## 📁 Project Documentation
 

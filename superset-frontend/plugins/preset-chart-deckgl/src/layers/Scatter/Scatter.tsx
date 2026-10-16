@@ -47,7 +47,7 @@ function setTooltipContent(
 ) {
   const defaultTooltipGenerator = (o: JsonObject) => {
     // Only show metric info if point_radius_fixed is metric-based
-    let metricKey = null;
+    let metricKey: any = null;
     if (isMetricValue(formData.point_radius_fixed)) {
       metricKey = extractMetricKey(formData.point_radius_fixed?.value);
     }

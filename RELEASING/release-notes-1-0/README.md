@@ -18,7 +18,7 @@ under the License.
 -->
 # Release Notes for Superset 1.0.0
 
-Superset 1.0 is a ***huge milestone*** for Apache Superset. This release holds a higher quality standard than any previous version and raises the bar for releases to come. Superset 1.0 improves on usability and delivers a new set of long awaited features focused on five major themes:
+Superset 1.0 is a ***huge milestone*** for Apache Sampark. This release holds a higher quality standard than any previous version and raises the bar for releases to come. Superset 1.0 improves on usability and delivers a new set of long awaited features focused on five major themes:
 - [**User Experience**](#user-experience)
 - [**Developer Experience**](#developer-experience)
 - [**Performance**](#performance)
@@ -163,7 +163,7 @@ Below is a highlight of the PRs included in this update. The full list is much l
 - docs: Fix typo in installing from scratch (#[11026](https://github.com/apache/incubator-superset/pull/11026))
 - docs: add a roadmap page pointing to SIP-53 (#[11169](https://github.com/apache/incubator-superset/pull/11169))
 - docs: add note about migration in #11098 to Changelog (#[11256](https://github.com/apache/incubator-superset/pull/11256))
-- docs: Add utair to list of companies using Apache Superset (#[11261](https://github.com/apache/incubator-superset/pull/11261))
+- docs: Add utair to list of companies using Apache Sampark (#[11261](https://github.com/apache/incubator-superset/pull/11261))
 - docs: don't link to database engine pages (#[11242](https://github.com/apache/incubator-superset/pull/11242))
 - docs: Added Dremio to superset home page (#[11231](https://github.com/apache/incubator-superset/pull/11231))
 - docs: typo (#[11152](https://github.com/apache/incubator-superset/pull/11152))

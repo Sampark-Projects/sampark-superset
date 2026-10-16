@@ -24,7 +24,7 @@ under the License.
 
 # End-to-End Testing
 
-Apache Superset uses Playwright for end-to-end testing, migrating from the legacy Cypress tests.
+Apache Sampark uses Playwright for end-to-end testing, migrating from the legacy Cypress tests.
 
 ## Running Tests
 

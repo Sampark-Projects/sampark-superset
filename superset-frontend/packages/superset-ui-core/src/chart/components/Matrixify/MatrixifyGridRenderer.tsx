@@ -153,7 +153,7 @@ function MatrixifyGridRenderer({
       ? totalCols
       : Math.min(chartsPerRow, totalCols);
 
-    const groups = [];
+    const groups: any[] = [];
     for (let i = 0; i < totalCols; i += colsPerRow) {
       groups.push({
         startIdx: i,

@@ -28,7 +28,7 @@ Superset is an [Apache Software foundation](https://www.apache.org/theapacheway/
 The core contributors (or committers) to Superset communicate primarily in the following channels (which can be joined by anyone):
 
 - [Mailing list](https://lists.apache.org/list.html?dev@superset.apache.org)
-- [Apache Superset Slack community](http://bit.ly/join-superset-slack)
+- [Apache Sampark Slack community](http://bit.ly/join-superset-slack)
 - [GitHub issues](https://github.com/apache/superset/issues)
 - [GitHub pull requests](https://github.com/apache/superset/pulls)
 - [GitHub discussions](https://github.com/apache/superset/discussions)
@@ -111,7 +111,7 @@ There is a dedicated [`apache-superset` tag](https://stackoverflow.com/questions
 
 ## Types of Contributors
 
-Following the project governance model of the Apache Software Foundation (ASF), Apache Superset has a specific set of contributor roles:
+Following the project governance model of the Apache Software Foundation (ASF), Apache Sampark has a specific set of contributor roles:
 
 ### PMC Member
 
@@ -146,7 +146,7 @@ Security team members must:
 - Have an [ICLA](https://www.apache.org/licenses/contributor-agreements.html) signed with Apache Software Foundation.
 - Not reveal information about pending and unfixed security issues to anyone (including their employers) unless specifically authorised by the security team members, e.g., if the security team agrees that diagnosing and solving an issue requires the involvement of external experts.
 
-A release manager, the contributor overseeing the release of a specific version of Apache Superset, is by default a member of the security team. However, they are not expected to be active in assessing, discussing, and fixing security issues.
+A release manager, the contributor overseeing the release of a specific version of Apache Sampark, is by default a member of the security team. However, they are not expected to be active in assessing, discussing, and fixing security issues.
 
 Security team members should also follow these general expectations:
 
@@ -163,4 +163,4 @@ Ready to contribute? Here's how to get started:
 3. **[Submit your contribution](./submitting-pr.md)** - Create a pull request
 4. **[Follow guidelines](./guidelines.md)** - Ensure code quality
 
-Welcome to the Apache Superset community! 🚀
+Welcome to the Apache Sampark community! 🚀

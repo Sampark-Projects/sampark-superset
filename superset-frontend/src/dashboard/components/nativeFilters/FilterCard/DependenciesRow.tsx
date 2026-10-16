@@ -54,7 +54,7 @@ const DependencyValue = ({
 };
 
 export const DependenciesRow = memo(({ filter }: FilterCardRowProps) => {
-  const dependencies = useFilterDependencies(filter);
+  const dependencies = useFilterDependencies(filter) as any[];
   const [dependenciesRef, plusRef, elementsTruncated, hasHiddenElements] =
     useTruncation();
   const theme = useTheme();

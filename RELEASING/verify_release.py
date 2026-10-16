@@ -60,7 +60,7 @@ KEYS_URL = "https://downloads.apache.org/superset/KEYS"
 
 
 def ensure_keys_imported() -> None:
-    """Import the Apache Superset KEYS file into the local GPG keyring.
+    """Import the Apache Sampark KEYS file into the local GPG keyring.
 
     Without this, `gpg --verify` returns "No public key" and the signature
     cannot actually be verified — only the key ID in the signature metadata

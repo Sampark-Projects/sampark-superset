@@ -46,7 +46,7 @@ from superset.utils.version import get_version_metadata
 logger = logging.getLogger(__name__)
 
 DEFAULT_SUPPORT_CONTACT = (
-    "your Superset administrator or the Apache Superset community "
+    "your Superset administrator or the Apache Sampark community "
     "(https://github.com/apache/superset/issues)"
 )
 
@@ -284,7 +284,7 @@ async def generate_bug_report(
     The support contact in the response is configurable via the
     ``MCP_BUG_REPORT_CONTACT`` setting in ``superset_config.py`` so each
     deployment can point users at the right channel. The default points
-    at the user's Superset administrator and the Apache Superset issue
+    at the user's Superset administrator and the Apache Sampark issue
     tracker.
 
     All request fields are optional — the tool still produces a useful

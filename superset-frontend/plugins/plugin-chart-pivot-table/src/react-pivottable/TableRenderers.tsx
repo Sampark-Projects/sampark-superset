@@ -487,7 +487,7 @@ export function TableRenderer(props: TableRendererProps) {
     // every level. The return value is a nested array of the same shape. It has
     // -1's for repeated values and the span number otherwise.
 
-    const spans = [];
+    const spans: number[][] = [];
     // Index of the last new value
     const li = Array(numAttrs).map(() => 0);
     let lv: (string | null)[] = Array(numAttrs).map(() => null);
@@ -495,7 +495,7 @@ export function TableRenderer(props: TableRendererProps) {
       // Keep increasing span values as long as the last keys are the same. For
       // the rest, record spans of 1. Update the indices too.
       const cv = attrArr[i];
-      const ent = [];
+      const ent: number[] = [];
       let depth = 0;
       const limit = Math.min(lv.length, cv.length);
       while (depth < limit && lv[depth] === cv[depth]) {
@@ -901,8 +901,8 @@ export function TableRenderer(props: TableRendererProps) {
       const needToggle =
         settingsColSubtotalDisplay.enabled === true &&
         attrIdx !== settingsColAttrs.length - 1;
-      let arrowClickHandle = null;
-      let subArrow = null;
+      let arrowClickHandle: any = null;
+      let subArrow: any = null;
       if (needToggle) {
         arrowClickHandle =
           attrIdx + 1 < maxColVisible!
@@ -924,7 +924,7 @@ export function TableRenderer(props: TableRendererProps) {
         </th>
       );
 
-      const attrValueCells = [];
+      const attrValueCells: any[] = [];
       const rowIncrSpan = settingsRowAttrs.length !== 0 ? 1 : 0;
       // Iterate through columns. Jump over duplicate values.
       let i = 0;
@@ -1143,8 +1143,8 @@ export function TableRenderer(props: TableRendererProps) {
             const needLabelToggle =
               settingsRowSubtotalDisplay.enabled === true &&
               i !== settingsRowAttrs.length - 1;
-            let arrowClickHandle = null;
-            let subArrow = null;
+            let arrowClickHandle: any = null;
+            let subArrow: any = null;
             if (needLabelToggle) {
               arrowClickHandle =
                 i + 1 < maxRowVisible!
@@ -1374,7 +1374,7 @@ export function TableRenderer(props: TableRendererProps) {
         );
       });
 
-      let totalCell = null;
+      let totalCell: any = null;
       if (rowTotals) {
         const agg = pivotData.getAggregator(rowKey, []);
         const aggValue = agg.value();
@@ -1468,7 +1468,7 @@ export function TableRenderer(props: TableRendererProps) {
         );
       });
 
-      let grandTotalCell = null;
+      let grandTotalCell: any = null;
       if (rowTotals) {
         const agg = pivotData.getAggregator([], []);
         const aggValue = agg.value();

@@ -29,7 +29,7 @@ interface IStructure {
 }
 
 function findParentId(structure: IStructure): string | null {
-  let parentId = null;
+  let parentId: string | null = null;
   if (structure) {
     const { childId, layout = {} } = structure;
     // default assignment to layout only works if value is undefined, not null
@@ -53,7 +53,7 @@ const cache: Record<string, string | null> = {};
 export default function findParentIdWithCache(
   structure: IStructure,
 ): string | null {
-  let parentId = null;
+  let parentId: string | null = null;
   if (structure) {
     const { childId, layout = {} } = structure;
     const cachedValue = cache[childId];

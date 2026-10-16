@@ -150,7 +150,7 @@ export default function transformProps(
   let percentChange = 0;
   let bigNumber = data.length === 0 ? null : data[0][metricName];
   let timestamp = data.length === 0 ? null : data[0][xAxisLabel];
-  let bigNumberFallback = null;
+  let bigNumberFallback: [number | null, number | null] | undefined | null = null;
   let sortedData: [number | null, number | null][] = [];
 
   if (data.length > 0) {

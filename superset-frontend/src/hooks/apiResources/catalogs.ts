@@ -38,7 +38,7 @@ type Params = Omit<FetchCatalogsQueryParams, 'forceRefresh'>;
 
 const catalogApi = api.injectEndpoints({
   endpoints: builder => ({
-    catalogs: builder.query<CatalogOption[], FetchCatalogsQueryParams>({
+    catalogs: builder.query({
       providesTags: [{ type: 'Catalogs', id: 'LIST' }],
       query: ({ dbId, forceRefresh }) => ({
         endpoint: `/api/v1/database/${dbId}/catalogs/`,

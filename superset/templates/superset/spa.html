@@ -25,7 +25,7 @@
         {% if title %}
           {{ title }}
         {% else %}
-          {{ default_title | default('Superset') }}
+          {{ default_title | default('Sampark') }}
         {% endif %}
       {% endblock %}
     </title>
@@ -144,20 +144,7 @@
         {% set tokens = theme_tokens | default({}) %}
         {% set spinner_style = "width: 70px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" %}
 
-        {% if spinner_svg %}
-          <!-- Inline SVG: Either custom theme SVG or default spinner -->
-          <div style="{{ spinner_style }}">
-            {{ spinner_svg | safe }}
-          </div>
-        {% elif tokens.get('brandSpinnerUrl') %}
-          <!-- Custom URL from theme -->
-          <img
-            src="{{ tokens.brandSpinnerUrl }}"
-            alt=""
-            aria-label="Loading"
-            style="{{ spinner_style }}"
-          />
-        {% endif %}
+
       </div>
     {% endblock %}
 

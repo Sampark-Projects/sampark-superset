@@ -389,7 +389,7 @@ export default function transformProps(
           fontWeight: 'bold',
         },
       },
-      data: normalizedTransformedData,
+      data: normalizedTransformedData as any,
     },
   ];
 

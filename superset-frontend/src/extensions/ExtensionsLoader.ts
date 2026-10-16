@@ -168,7 +168,7 @@ class ExtensionsLoader {
         colno?: number,
         error?: Error,
       ) => {
-        const errorDetails = [];
+        const errorDetails: string[] = [];
         if (source) errorDetails.push(`source: ${source}`);
         if (lineno !== undefined) errorDetails.push(`line: ${lineno}`);
         if (colno !== undefined) errorDetails.push(`column: ${colno}`);

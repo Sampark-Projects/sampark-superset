@@ -24,7 +24,7 @@ under the License.
 
 # Overview
 
-Apache Superset's extension system enables organizations to build custom features without modifying the core codebase. Inspired by the [VS Code extension model](https://code.visualstudio.com/api), this architecture addresses a long-standing challenge: teams previously had to fork Superset or make invasive modifications to add capabilities like query optimizers, custom panels, or specialized integrations—resulting in maintenance overhead and codebase fragmentation.
+Apache Sampark's extension system enables organizations to build custom features without modifying the core codebase. Inspired by the [VS Code extension model](https://code.visualstudio.com/api), this architecture addresses a long-standing challenge: teams previously had to fork Superset or make invasive modifications to add capabilities like query optimizers, custom panels, or specialized integrations—resulting in maintenance overhead and codebase fragmentation.
 
 The extension system introduces a modular, plugin-based architecture where both built-in features and external extensions use the same well-defined APIs. This "lean core" approach ensures that any capability available to Superset's internal features is equally accessible to community-developed extensions, fostering a vibrant ecosystem while reducing the maintenance burden on core contributors.
 

@@ -348,7 +348,7 @@ const TablePreview: FC<Props> = ({ dbId, catalog, schema, tableName }) => {
           >
             <AutoSizer disableWidth>
               {({ height }) => {
-                const tabItems = [];
+                const tabItems: any[] = [];
 
                 tabItems.push({
                   key: TABS_KEYS.COLUMNS,

@@ -1,5 +1,5 @@
 {
-  "name": "Apache Superset Development",
+  "name": "Apache Sampark Development",
   // Option 1: Use pre-built image directly
   // "image": "ghcr.io/apache/superset:devcontainer-base",
 

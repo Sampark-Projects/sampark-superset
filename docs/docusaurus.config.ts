@@ -310,7 +310,7 @@ const config: Config = {
   },
   title: 'Superset',
   tagline:
-    'Apache Superset is a modern data exploration and visualization platform',
+    'Apache Sampark is a modern data exploration and visualization platform',
   url: 'https://superset.apache.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -335,11 +335,11 @@ const config: Config = {
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
-        name: 'Apache Superset',
+        name: 'Apache Sampark',
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Cross-platform',
         description:
-          'Apache Superset is a modern, enterprise-ready business intelligence web application for data exploration and visualization.',
+          'Apache Sampark is a modern, enterprise-ready business intelligence web application for data exploration and visualization.',
         url: 'https://superset.apache.org',
         license: 'https://www.apache.org/licenses/LICENSE-2.0',
         author: {
@@ -372,7 +372,7 @@ const config: Config = {
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'Apache Superset',
+        name: 'Apache Sampark',
         url: 'https://superset.apache.org',
         potentialAction: {
           '@type': 'SearchAction',
@@ -830,7 +830,7 @@ const config: Config = {
           'data visualization, business intelligence, BI, dashboards, SQL, analytics, open source, Apache, charts, reporting',
       },
       { property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'Apache Superset' },
+      { property: 'og:site_name', content: 'Apache Sampark' },
       {
         property: 'og:image',
         content: 'https://superset.apache.org/img/superset-og-image.png',
@@ -977,7 +977,7 @@ const config: Config = {
           <p>Copyright © ${new Date().getFullYear()},
           The <a href="https://www.apache.org/" target="_blank" rel="noreferrer">Apache Software Foundation</a>,
           Licensed under the Apache <a href="https://apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">License</a>.</p>
-          <p><small>Apache Superset, Apache, Superset, the Superset logo, and the Apache feather logo are either registered trademarks or trademarks of The Apache Software Foundation. All other products or name brands are trademarks of their respective holders, including The Apache Software Foundation.
+          <p><small>Apache Sampark, Apache, Superset, the Superset logo, and the Apache feather logo are either registered trademarks or trademarks of The Apache Software Foundation. All other products or name brands are trademarks of their respective holders, including The Apache Software Foundation.
           <a href="https://www.apache.org/" target="_blank">Apache Software Foundation</a> resources</small></p>
           <img class="footer__divider" src="/img/community/line.png" alt="Divider" />
           <p>
@@ -1016,20 +1016,20 @@ const config: Config = {
       src: 'https://widget.kapa.ai/kapa-widget.bundle.js',
       async: true,
       'data-website-id': 'c6a8a8b8-3127-48f9-97a7-51e9e10d20d0',
-      'data-project-name': 'Apache Superset',
+      'data-project-name': 'Apache Sampark',
       'data-project-color': '#FFFFFF',
       'data-project-logo':
         'https://superset.apache.org/img/superset-logo-icon-only.png',
       'data-modal-override-open-id': 'ask-ai-input',
       'data-modal-override-open-class': 'search-input',
       'data-modal-disclaimer':
-        'This is a custom LLM for Apache Superset with access to all [documentation](superset.apache.org/docs/intro/), [GitHub Open Issues, PRs and READMEs](github.com/apache/superset).&#10;&#10;Companies deploy assistants like this ([built by kapa.ai](https://kapa.ai)) on docs via [website widget](https://docs.kapa.ai/integrations/website-widget) (Docker, Reddit), in [support forms](https://docs.kapa.ai/integrations/support-form-deflector) for ticket deflection (Monday.com, Mapbox), or as [Slack bots](https://docs.kapa.ai/integrations/slack-bot) with private sources.',
+        'This is a custom LLM for Apache Sampark with access to all [documentation](superset.apache.org/docs/intro/), [GitHub Open Issues, PRs and READMEs](github.com/apache/superset).&#10;&#10;Companies deploy assistants like this ([built by kapa.ai](https://kapa.ai)) on docs via [website widget](https://docs.kapa.ai/integrations/website-widget) (Docker, Reddit), in [support forms](https://docs.kapa.ai/integrations/support-form-deflector) for ticket deflection (Monday.com, Mapbox), or as [Slack bots](https://docs.kapa.ai/integrations/slack-bot) with private sources.',
       'data-modal-example-questions':
         'How do I install Superset?,How can I contribute to Superset?',
       'data-button-text-color': 'rgb(81,166,197)',
       'data-modal-header-bg-color': '#ffffff',
       'data-modal-title-color': 'rgb(81,166,197)',
-      'data-modal-title': 'Apache Superset AI',
+      'data-modal-title': 'Apache Sampark AI',
       'data-modal-disclaimer-text-color': '#000000',
       'data-consent-required': 'true',
       'data-consent-screen-disclaimer':

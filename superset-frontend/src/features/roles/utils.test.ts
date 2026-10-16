@@ -22,6 +22,7 @@ import {
   clearPermissionSearchCache,
   fetchGroupOptions,
   fetchPermissionOptions,
+  formatPermissionLabel,
 } from './utils';
 
 const getMock = jest.spyOn(SupersetClient, 'get');
@@ -554,4 +555,55 @@ test('fetchPermissionOptions normalizes whitespace and case for cache keys', asy
   // " Dataset " (leading + trailing space) — same normalized key, cache hit
   await fetchPermissionOptions(' Dataset ', 0, 50, addDangerToast);
   expect(getMock).not.toHaveBeenCalled();
+});
+
+test('formatPermissionLabel replaces superset with Sampark for display purpose', () => {
+  expect(formatPermissionLabel('can_csv', 'Superset')).toBe('can csv Sampark');
+  expect(formatPermissionLabel('all_datasource_access', 'Superset')).toBe(
+    'all datasource access Sampark',
+  );
+  expect(formatPermissionLabel('can_sqllab', 'superset')).toBe(
+    'can sqllab Sampark',
+  );
+  expect(formatPermissionLabel('can_read', 'Database')).toBe(
+    'can read Database',
+  );
+});
+
+test('fetchPermissionOptions searches for superset when searching sampark', async () => {
+  getMock.mockResolvedValue({
+    json: {
+      count: 1,
+      result: [
+        {
+          id: 5,
+          permission: { name: 'can_csv' },
+          view_menu: { name: 'Superset' },
+        },
+      ],
+    },
+  } as any);
+  const addDangerToast = jest.fn();
+
+  const result = await fetchPermissionOptions('sampark', 0, 50, addDangerToast);
+
+  // Queries should include superset
+  const calls = getMock.mock.calls.map(
+    ([call]) => (call as { endpoint: string }).endpoint,
+  );
+  const queries = calls.map(ep => rison.decode(ep.split('?q=')[1]));
+
+  expect(queries).toContainEqual(
+    expect.objectContaining({
+      filters: [{ col: 'view_menu.name', opr: 'ct', value: 'superset' }],
+    }),
+  );
+
+  // Result display label should show Sampark
+  expect(result.data).toEqual([
+    {
+      value: 5,
+      label: 'can csv Sampark',
+    },
+  ]);
 });

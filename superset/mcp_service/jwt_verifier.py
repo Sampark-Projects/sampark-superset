@@ -205,7 +205,7 @@ def _build_browser_hello_html(
     server_key: str = cfg["server_key"]
     show_transport: bool = cfg["show_transport"]
     clients: list[str] = [html_module.escape(str(c)) for c in cfg["clients"]]
-    app_name: str = html_module.escape(str(cfg.get("app_name", "Apache Superset")))
+    app_name: str = html_module.escape(str(cfg.get("app_name", "Apache Sampark")))
     logo_url: str | None = None
     if logo_url_raw := cfg.get("logo_url"):
         logo_url_stripped = str(logo_url_raw).strip()

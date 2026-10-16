@@ -2,7 +2,7 @@
   // Extend the base configuration
   "extends": "../devcontainer-base.json",
 
-  "name": "Apache Superset Development with MCP",
+  "name": "Apache Sampark Development with MCP",
 
   // Forward ports for development
   "forwardPorts": [9001, 5008],

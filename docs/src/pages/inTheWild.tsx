@@ -71,7 +71,7 @@ export default function InTheWild() {
   return (
     <Layout
       title="In the Wild"
-      description="Organizations using Apache Superset"
+      description="Organizations using Apache Sampark"
     >
       <main>
         <BlurredSection>

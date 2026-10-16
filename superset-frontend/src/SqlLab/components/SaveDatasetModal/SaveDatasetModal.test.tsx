@@ -312,7 +312,7 @@ describe('SaveDatasetModal', () => {
   });
 
   test('renders a checkbox button when template processing is enabled', () => {
-    // @ts-expect-error
+    // 
     global.featureFlags = {
       [FeatureFlag.EnableTemplateProcessing]: true,
     };
@@ -321,7 +321,7 @@ describe('SaveDatasetModal', () => {
   });
 
   test('correctly includes template parameters when template processing is enabled', () => {
-    // @ts-expect-error
+    // 
     global.featureFlags = {
       [FeatureFlag.EnableTemplateProcessing]: true,
     };
@@ -352,7 +352,7 @@ describe('SaveDatasetModal', () => {
   });
 
   test('correctly excludes template parameters when template processing is enabled', () => {
-    // @ts-expect-error
+    // 
     global.featureFlags = {
       [FeatureFlag.EnableTemplateProcessing]: true,
     };
@@ -412,7 +412,7 @@ describe('SaveDatasetModal', () => {
   };
 
   test('sends template_params when overwriting a dataset with include template parameters checked', async () => {
-    // @ts-expect-error
+    // 
     global.featureFlags = {
       [FeatureFlag.EnableTemplateProcessing]: true,
     };
@@ -454,7 +454,7 @@ describe('SaveDatasetModal', () => {
   });
 
   test('does not send template_params when overwriting a dataset with include template parameters unchecked', async () => {
-    // @ts-expect-error
+    // 
     global.featureFlags = {
       [FeatureFlag.EnableTemplateProcessing]: true,
     };

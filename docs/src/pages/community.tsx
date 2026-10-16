@@ -181,7 +181,7 @@ const Community = () => {
   return (
     <Layout
       title="Community"
-      description="Community website for Apache Superset™, a data visualization and data exploration platform"
+      description="Community website for Apache Sampark™, a data visualization and data exploration platform"
     >
       <main>
         <BlurredSection>

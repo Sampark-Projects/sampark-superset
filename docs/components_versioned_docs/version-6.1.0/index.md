@@ -25,7 +25,7 @@ sidebar_position: 1
 
 # Superset Component Library
 
-Welcome to the Apache Superset Component Library documentation. This section provides comprehensive documentation for all the UI components, chart components, and layout components used in Superset.
+Welcome to the Apache Sampark Component Library documentation. This section provides comprehensive documentation for all the UI components, chart components, and layout components used in Superset.
 
 ## What is the Component Library?
 

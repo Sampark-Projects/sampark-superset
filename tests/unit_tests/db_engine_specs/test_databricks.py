@@ -132,8 +132,8 @@ def test_get_extra_params(mocker: MockerFixture) -> None:
     assert DatabricksNativeEngineSpec.get_extra_params(database) == {
         "engine_params": {
             "connect_args": {
-                "http_headers": [("User-Agent", "Apache Superset")],
-                "_user_agent_entry": "Apache Superset",
+                "http_headers": [("User-Agent", "Apache Sampark")],
+                "_user_agent_entry": "Apache Sampark",
             }
         }
     }

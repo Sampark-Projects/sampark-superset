@@ -48,7 +48,7 @@ const TestDashboardsMenuItems = ({
 };
 
 const createDashboards = (numberOfItems: number) => {
-  const dashboards = [];
+  const dashboards: any[] = [];
   for (let i = 1; i <= numberOfItems; i += 1) {
     dashboards.push({ id: i, dashboard_title: `Dashboard ${i}` });
   }

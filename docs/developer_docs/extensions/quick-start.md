@@ -37,7 +37,7 @@ Before starting, ensure you have:
 
 ## Step 1: Install the Extensions CLI
 
-First, install the Apache Superset Extensions CLI:
+First, install the Apache Sampark Extensions CLI:
 
 ```bash
 pip install apache-superset-extensions-cli

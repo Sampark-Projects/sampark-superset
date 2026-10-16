@@ -1211,7 +1211,7 @@
           "hostname": "IP address or hostname",
           "port": "Default 6667"
         },
-        "notes": "The IoTDB SQLAlchemy dialect was written to integrate with Apache Superset. IoTDB uses a hierarchical data model, which is reorganized into a relational model for SQL queries.",
+        "notes": "The IoTDB SQLAlchemy dialect was written to integrate with Apache Sampark. IoTDB uses a hierarchical data model, which is reorganized into a relational model for SQL queries.",
         "category": "Apache Projects"
       },
       "engine": "iotdb",

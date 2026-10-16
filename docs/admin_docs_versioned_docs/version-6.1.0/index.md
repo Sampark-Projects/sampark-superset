@@ -1,6 +1,6 @@
 ---
 title: Admin Documentation
-description: Administrator guides for installing, configuring, and managing Apache Superset
+description: Administrator guides for installing, configuring, and managing Apache Sampark
 ---
 
 <!--
@@ -24,7 +24,7 @@ under the License.
 
 # Admin Documentation
 
-This section contains documentation for system administrators and operators who deploy and manage Apache Superset installations.
+This section contains documentation for system administrators and operators who deploy and manage Apache Sampark installations.
 
 ## What's in this section
 

@@ -128,7 +128,7 @@ const ItemTitleContainer = forwardRef<HTMLDivElement, Props>(
       const isRemoved = !!removedItems[id];
       const isErrored = erroredItems.includes(id);
       const isActive = currentItemId === id;
-      const classNames = [];
+      const classNames: string[] = [];
       if (isErrored) {
         classNames.push('errored');
       }

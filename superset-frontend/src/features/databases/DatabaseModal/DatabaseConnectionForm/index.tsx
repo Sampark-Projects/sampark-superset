@@ -114,7 +114,6 @@ const DatabaseConnectionForm = ({
             // Calling the component as a function (e.g. FORM_FIELD_MAP[field]({...}))
             // makes the field's hooks register against this parent's fiber and
             // breaks the rules of hooks once the parent owns its own state.
-            // @ts-expect-error TODO: fix ComponentClass for SSHTunnelSwitchComponent not having call signature.
             const FieldComponent = FORM_FIELD_MAP[field];
             return (
               <FieldComponent

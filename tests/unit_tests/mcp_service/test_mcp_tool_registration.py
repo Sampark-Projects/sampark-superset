@@ -313,7 +313,7 @@ def test_config_guard_tools_excluded_from_instructions(
     captured: list[str] = []
 
     def fake_get_instructions(
-        branding: str = "Apache Superset",
+        branding: str = "Apache Sampark",
         disabled_tools: set[str] | None = None,
     ) -> str:
         captured.append(str(disabled_tools))
@@ -342,7 +342,7 @@ def test_instructions_generated_after_disabled_tools_removed() -> None:
     captured: list[str] = []
 
     def fake_get_instructions(
-        branding: str = "Apache Superset",
+        branding: str = "Apache Sampark",
         disabled_tools: set[str] | None = None,
     ) -> str:
         captured.append(str(disabled_tools))

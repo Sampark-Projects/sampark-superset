@@ -86,7 +86,7 @@ export const ScopingModal = ({
   const dispatch = useDispatch();
   const chartLayoutItems = useChartLayoutItems();
   const chartLayoutItemMap = useMemo(
-    () => createChartLayoutItemMap(chartLayoutItems),
+    () => createChartLayoutItemMap(chartLayoutItems as any),
     [chartLayoutItems],
   );
   const chartIds = useChartIds();

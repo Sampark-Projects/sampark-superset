@@ -63,7 +63,7 @@ def _build_manifest(application_root: str, static_assets_prefix: str) -> dict[st
     root = _normalize_app_root(application_root)
     static_prefix = static_assets_prefix.rstrip("/")
     return {
-        "name": "Apache Superset",
+        "name": "Apache Sampark",
         "short_name": "Superset",
         "description": "Modern data exploration and visualization platform",
         "start_url": f"{root}/welcome/",
@@ -105,7 +105,7 @@ def _build_manifest(application_root: str, static_assets_prefix: str) -> dict[st
                 "sizes": "1280x720",
                 "type": "image/png",
                 "form_factor": "wide",
-                "label": "Apache Superset Dashboard",
+                "label": "Apache Sampark Dashboard",
             },
             {
                 "src": (
@@ -114,7 +114,7 @@ def _build_manifest(application_root: str, static_assets_prefix: str) -> dict[st
                 "sizes": "540x720",
                 "type": "image/png",
                 "form_factor": "narrow",
-                "label": "Apache Superset Mobile View",
+                "label": "Apache Sampark Mobile View",
             },
         ],
         "file_handlers": [

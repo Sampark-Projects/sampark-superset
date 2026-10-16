@@ -17,6 +17,6 @@
   },
   "redisStreamPrefix": "async-events-",
   "jwtAlgorithms": ["HS256"],
-  "jwtSecret": "CHANGE-ME-IN-PRODUCTION-GOTTA-BE-LONG-AND-SECRET",
+  "jwtSecret": "a-very-long-and-secure-jwt-secret-that-is-at-least-32-bytes-long-for-websockets",
   "jwtCookieName": "async-token"
 }

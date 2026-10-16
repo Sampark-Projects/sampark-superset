@@ -2,7 +2,7 @@
   // Extend the base configuration
   "extends": "../devcontainer-base.json",
 
-  "name": "Apache Superset Development (Default)",
+  "name": "Apache Sampark Development (Default)",
 
   // Forward ports for development
   "forwardPorts": [9001],

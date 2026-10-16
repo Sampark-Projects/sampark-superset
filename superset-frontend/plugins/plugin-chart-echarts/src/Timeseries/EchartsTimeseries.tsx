@@ -267,7 +267,7 @@ export default function EchartsTimeseries({
   const hasDimensions = ensureIsArray(groupby).length > 0;
 
   const getModelInfo = (target: ViewRootGroup, globalModel: GlobalModel) => {
-    let el = target;
+    let el: any = target;
     let model: ComponentModel | null = null;
     while (el) {
       // eslint-disable-next-line no-underscore-dangle

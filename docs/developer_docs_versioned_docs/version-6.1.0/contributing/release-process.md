@@ -24,7 +24,7 @@ under the License.
 
 # Release Process
 
-Understand Apache Superset's release process, versioning strategy, and how to participate.
+Understand Apache Sampark's release process, versioning strategy, and how to participate.
 
 ## Release Cadence
 
@@ -125,7 +125,7 @@ VERSION = "X.Y.0rc1"
 #### Release Notes Template
 
 ```markdown
-# Apache Superset X.Y.0
+# Apache Sampark X.Y.0
 
 ## 🎉 Highlights
 
@@ -162,7 +162,7 @@ Thanks to all contributors!
 
 ```bash
 # Tag release candidate
-git tag -a vX.Y.Zrc1 -m "Apache Superset X.Y.Z RC1"
+git tag -a vX.Y.Zrc1 -m "Apache Sampark X.Y.Z RC1"
 git push upstream vX.Y.Zrc1
 
 # Build source distribution
@@ -184,7 +184,7 @@ cd superset
 mkdir X.Y.Zrc1
 cp /path/to/dist/* X.Y.Zrc1/
 svn add X.Y.Zrc1
-svn commit -m "Add Apache Superset X.Y.Z RC1"
+svn commit -m "Add Apache Sampark X.Y.Z RC1"
 ```
 
 ### 3. Voting Process
@@ -194,11 +194,11 @@ svn commit -m "Add Apache Superset X.Y.Z RC1"
 Send to dev@superset.apache.org:
 
 ```
-Subject: [VOTE] Release Apache Superset X.Y.Z RC1
+Subject: [VOTE] Release Apache Sampark X.Y.Z RC1
 
 Hi all,
 
-I'd like to call a vote to release Apache Superset version X.Y.Z RC1.
+I'd like to call a vote to release Apache Sampark version X.Y.Z RC1.
 
 The release candidate:
 - Git tag: vX.Y.Zrc1
@@ -242,9 +242,9 @@ Thanks,
 #### Tally Votes
 
 ```
-Subject: [RESULT][VOTE] Release Apache Superset X.Y.Z RC1
+Subject: [RESULT][VOTE] Release Apache Sampark X.Y.Z RC1
 
-The vote to release Apache Superset X.Y.Z RC1 has passed.
+The vote to release Apache Sampark X.Y.Z RC1 has passed.
 
 +1 votes (binding):
 - PMC Member 1
@@ -270,7 +270,7 @@ Thank you to everyone who tested and voted!
 
 ```bash
 # Tag final release
-git tag -a vX.Y.Z -m "Apache Superset X.Y.Z"
+git tag -a vX.Y.Z -m "Apache Sampark X.Y.Z"
 git push upstream vX.Y.Z
 
 # Move from dev to release
@@ -311,12 +311,12 @@ npm run build
 Send to announce@apache.org, dev@superset.apache.org:
 
 ```
-Subject: [ANNOUNCE] Apache Superset X.Y.Z Released
+Subject: [ANNOUNCE] Apache Sampark X.Y.Z Released
 
-The Apache Superset team is pleased to announce the release of
-Apache Superset X.Y.Z.
+The Apache Sampark team is pleased to announce the release of
+Apache Sampark X.Y.Z.
 
-Apache Superset is a modern data exploration and visualization platform.
+Apache Sampark is a modern data exploration and visualization platform.
 
 This release includes [number] commits from [number] contributors.
 
@@ -332,7 +332,7 @@ Docker: docker pull apache/superset:X.Y.Z
 
 Thanks to all contributors who made this release possible!
 
-The Apache Superset Team
+The Apache Sampark Team
 ```
 
 #### Update GitHub Release
@@ -340,7 +340,7 @@ The Apache Superset Team
 ```bash
 # Create GitHub release
 gh release create vX.Y.Z \
-  --title "Apache Superset X.Y.Z" \
+  --title "Apache Sampark X.Y.Z" \
   --notes-file RELEASE_NOTES.md
 ```
 

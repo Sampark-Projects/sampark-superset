@@ -330,7 +330,7 @@ const SaveModal = ({
     const initializeDashboard = async () => {
       let dashboardId = dashboardIdProp;
       if (!dashboardId) {
-        let lastDashboard = null;
+        let lastDashboard: string | null = null;
         try {
           lastDashboard = sessionStorage.getItem(SK_DASHBOARD_ID);
         } catch (error) {

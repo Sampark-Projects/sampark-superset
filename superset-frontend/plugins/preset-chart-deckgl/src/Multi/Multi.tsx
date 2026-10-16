@@ -147,7 +147,7 @@ const DeckMulti = (props: DeckMultiProps) => {
 
   const dataMask = useSelector(selectDataMask);
 
-  const layerVisibilityFilter = Object.values(dataMask).find(
+  const layerVisibilityFilter = Object.values(dataMask as DataMaskState).find(
     mask => mask?.extraFormData?.visible_deckgl_layers !== undefined,
   );
 
@@ -293,7 +293,7 @@ const DeckMulti = (props: DeckMultiProps) => {
       }
 
       return (
-        // @ts-expect-error TODO(hainenber): define proper type for `form_data.viz_type` and call signature for functions in layerGenerators.
+        // TODO(hainenber): define proper type for `form_data.viz_type` and call signature for functions in layerGenerators.
         layerGenerators[layerFormData.viz_type]({
           formData: layerFormData,
           payload,

@@ -16,14 +16,14 @@
  specific language governing permissions and limitations
  under the License.
 -->
-# Contributing to Apache Superset
+# Contributing to Apache Sampark
 
 Contributions are welcome and are greatly appreciated! Every
 little bit helps, and credit will always be given.
 
 ## Developer Portal
 
-All developer and contribution documentation has moved to the Apache Superset Developer Portal:
+All developer and contribution documentation has moved to the Apache Sampark Developer Portal:
 
 **[📚 View the Developer Portal →](https://superset.apache.org/developer_portal/)**
 

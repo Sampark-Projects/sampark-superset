@@ -94,7 +94,7 @@ function PropertiesModal({
         key: 'general',
         name: t('General settings'),
         validator: () => {
-          const errors = [];
+          const errors: string[] = [];
           if (!name || name.trim().length === 0) {
             errors.push(t('Chart name is required'));
           }
@@ -105,7 +105,7 @@ function PropertiesModal({
         key: 'configuration',
         name: t('Configuration'),
         validator: () => {
-          const errors = [];
+          const errors: string[] = [];
           if (cacheTimeout && Number.isNaN(Number(cacheTimeout))) {
             errors.push(t('Cache timeout must be a number'));
           }

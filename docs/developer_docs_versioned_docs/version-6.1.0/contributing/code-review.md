@@ -24,7 +24,7 @@ under the License.
 
 # Code Review Process
 
-Understand how code reviews work in Apache Superset and how to participate effectively.
+Understand how code reviews work in Apache Sampark and how to participate effectively.
 
 ## Overview
 

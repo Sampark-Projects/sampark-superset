@@ -48,7 +48,7 @@ from werkzeug.security import check_password_hash
 def factory_reset(
     username: str, silent: bool, exclude_users: str, exclude_roles: str
 ) -> None:
-    """Factory Reset Apache Superset"""
+    """Factory Reset Apache Sampark"""
 
     # Check feature flag inside the command
     if not current_app.config.get("FEATURE_FLAGS", {}).get(

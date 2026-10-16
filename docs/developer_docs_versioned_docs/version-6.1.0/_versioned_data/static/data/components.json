@@ -316,7 +316,7 @@
       "name": "Icons",
       "category": "ui",
       "categoryLabel": "Core Components",
-      "description": "Icon library for Apache Superset. Contains over 200 icons based on Ant Design icons with consistent sizing and theming support.",
+      "description": "Icon library for Apache Sampark. Contains over 200 icons based on Ant Design icons with consistent sizing and theming support.",
       "importPath": "@superset/components",
       "package": "@superset-ui/core/components",
       "extensionCompatible": false,

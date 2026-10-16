@@ -919,7 +919,7 @@ def test_get_user_agent(mocker: MockerFixture, app_context: None) -> None:
     database_mock = mocker.MagicMock()
     database_mock.database_name = "mydb"
 
-    assert get_user_agent(database_mock, QuerySource.DASHBOARD) == "Apache Superset", (
+    assert get_user_agent(database_mock, QuerySource.DASHBOARD) == "Apache Sampark", (
         "The default user agent should be returned"
     )
 

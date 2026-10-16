@@ -109,7 +109,7 @@ export const mapQueryResponse = (
 
 export const queryHistoryApi = api.injectEndpoints({
   endpoints: builder => ({
-    editorQueries: builder.query<QueryResult, EditorQueriesParams>({
+    editorQueries: builder.query({
       providesTags: ['EditorQueries'],
       query: ({ editorId, pageIndex = 0, pageSize = 25 }) => ({
         method: 'GET',

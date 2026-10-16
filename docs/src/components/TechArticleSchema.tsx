@@ -37,7 +37,7 @@ interface TechArticleSchemaProps {
  * @example
  * <TechArticleSchema
  *   title="Installing Superset with Docker"
- *   description="Learn how to install Apache Superset using Docker Compose"
+ *   description="Learn how to install Apache Sampark using Docker Compose"
  *   keywords={['docker', 'installation', 'superset']}
  *   proficiencyLevel="Beginner"
  * />
@@ -62,7 +62,7 @@ export default function TechArticleSchema({
     proficiencyLevel,
     author: {
       '@type': 'Organization',
-      name: 'Apache Superset Contributors',
+      name: 'Apache Sampark Contributors',
       url: 'https://github.com/apache/superset/graphs/contributors',
     },
     publisher: {

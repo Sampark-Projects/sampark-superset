@@ -24,7 +24,7 @@ under the License.
 
 # Overview
 
-Apache Superset follows a comprehensive testing strategy that ensures code quality, reliability, and maintainability. This section covers all aspects of testing in the Superset ecosystem, from unit tests to end-to-end testing workflows.
+Apache Sampark follows a comprehensive testing strategy that ensures code quality, reliability, and maintainability. This section covers all aspects of testing in the Superset ecosystem, from unit tests to end-to-end testing workflows.
 
 ## Testing Philosophy
 

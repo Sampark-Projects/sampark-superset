@@ -118,7 +118,7 @@ describe('getBreakPoints', () => {
 
       // Check that breakpoints are evenly spaced
       const numericBreakPoints = breakPoints.map(parseFloat);
-      const deltas = [];
+      const deltas: number[] = [];
       for (let i = 1; i < numericBreakPoints.length; i += 1) {
         deltas.push(numericBreakPoints[i] - numericBreakPoints[i - 1]);
       }
@@ -459,7 +459,7 @@ describe('getBreakPoints', () => {
     test('ensures no data points fall outside breakpoint range', () => {
       // Generate random test data
       const generateRandomData = (count: number, min: number, max: number) => {
-        const data = [];
+        const data: { value: number }[] = [];
         for (let i = 0; i < count; i += 1) {
           data.push({ value: Math.random() * (max - min) + min });
         }

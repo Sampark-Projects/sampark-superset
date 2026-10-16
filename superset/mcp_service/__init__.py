@@ -18,9 +18,9 @@
 # superset/mcp_service/__init__.py
 
 """
-Apache Superset MCP Service
+Apache Sampark MCP Service
 
-This package provides the Model Context Protocol (MCP) service for Apache Superset,
+This package provides the Model Context Protocol (MCP) service for Apache Sampark,
 enabling programmatic access to Superset's functionality through a standardized API.
 
 The MCP service operates as a standalone FastMCP server.

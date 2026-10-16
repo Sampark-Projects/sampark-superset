@@ -1663,7 +1663,7 @@ const DatasetList: FunctionComponent<DatasetListProps> = ({
                   );
                 }
 
-                const labels = [];
+                const labels: string[] = [];
                 if (physicalCount) labels.push(t('%s Physical', physicalCount));
                 if (virtualCount) labels.push(t('%s Virtual', virtualCount));
                 if (semanticViewCount) {

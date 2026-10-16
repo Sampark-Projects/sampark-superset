@@ -684,7 +684,7 @@ class TestBrandAppNameFallback:
                     "default": {
                         "token": {
                             "brandAppName": "Superset",  # Default value
-                            "brandLogoAlt": "Apache Superset",
+                            "brandLogoAlt": "Apache Sampark",
                         }
                     }
                 }
@@ -719,7 +719,7 @@ class TestBrandAppNameFallback:
                     "default": {
                         "token": {
                             "brandAppName": "Superset",  # Default value
-                            "brandLogoAlt": "Apache Superset",
+                            "brandLogoAlt": "Apache Sampark",
                         }
                     }
                 }

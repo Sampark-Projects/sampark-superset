@@ -56,9 +56,13 @@ export const updateRoleName = async (roleId: number, name: string) =>
   });
 
 export const formatPermissionLabel = (
-  permissionName: string,
-  viewMenuName: string,
-) => `${permissionName.replace(/_/g, ' ')} ${viewMenuName.replace(/_/g, ' ')}`;
+  permissionName: string = '',
+  viewMenuName: string = '',
+) => {
+  const perm = (permissionName || '').replace(/_/g, ' ');
+  const view = (viewMenuName || '').replace(/_/g, ' ');
+  return `${perm} ${view}`.trim().replace(/\bsuperset\b/gi, 'Sampark');
+};
 
 type PermissionResult = {
   id: number;
@@ -153,17 +157,25 @@ export const fetchPermissionOptions = async (
     const cacheKey = filterValue.trim().toLowerCase();
     let cached = permissionSearchCache.get(cacheKey);
     if (!cached) {
-      const [byViewMenu, byPermission] = await Promise.all([
+      const searchTerms = [filterValue];
+      if (/sampark/i.test(filterValue)) {
+        searchTerms.push(filterValue.replace(/sampark/gi, 'superset'));
+      } else if (/superset/i.test(filterValue)) {
+        searchTerms.push(filterValue.replace(/superset/gi, 'sampark'));
+      }
+
+      const searchPromises = searchTerms.flatMap(term => [
         fetchAllPermissionPages([
-          { col: 'view_menu.name', opr: 'ct', value: filterValue },
+          { col: 'view_menu.name', opr: 'ct', value: term },
         ]),
         fetchAllPermissionPages([
-          { col: 'permission.name', opr: 'ct', value: filterValue },
+          { col: 'permission.name', opr: 'ct', value: term },
         ]),
       ]);
 
+      const fetchedBatches = await Promise.all(searchPromises);
       const seen = new Set<number>();
-      cached = [...byViewMenu, ...byPermission].filter(item => {
+      cached = fetchedBatches.flat().filter(item => {
         if (seen.has(item.value)) return false;
         seen.add(item.value);
         return true;

@@ -24,7 +24,7 @@ under the License.
 
 # Community Extensions
 
-This page serves as a registry of community-created Superset extensions. These extensions are developed and maintained by community members and are not officially supported or vetted by the Apache Superset project. **Before installing any community extension, administrators are responsible for evaluating the extension's source code for security vulnerabilities, performance impact, UI/UX quality, and compatibility with their Superset deployment.**
+This page serves as a registry of community-created Superset extensions. These extensions are developed and maintained by community members and are not officially supported or vetted by the Apache Sampark project. **Before installing any community extension, administrators are responsible for evaluating the extension's source code for security vulnerabilities, performance impact, UI/UX quality, and compatibility with their Superset deployment.**
 
 ## Extensions
 
@@ -42,7 +42,7 @@ This page serves as a registry of community-created Superset extensions. These e
 
 ## How to Add Your Extension
 
-To add your extension to this registry, submit a pull request to the [Apache Superset repository](https://github.com/apache/superset) with the following changes:
+To add your extension to this registry, submit a pull request to the [Apache Sampark repository](https://github.com/apache/superset) with the following changes:
 
 1. Add a row to the **Extensions** table above using this format:
 

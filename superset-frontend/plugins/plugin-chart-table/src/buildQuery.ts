@@ -133,7 +133,7 @@ export const buildQuery: BuildQuery<TableChartFormData> = (
     }
 
     let temporalColumnAdded = false;
-    let temporalColumn = null;
+    let temporalColumn: AdhocColumn | null = null;
 
     if (queryMode === QueryMode.Aggregate) {
       metrics = metrics || [];

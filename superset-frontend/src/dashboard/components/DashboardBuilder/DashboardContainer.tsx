@@ -126,8 +126,8 @@ function normalizeChartCustomizationsForScopeCalculation(
 export const renderedChartIdsSelector: (state: RootState) => number[] =
   createSelector([(state: RootState) => state.charts], charts =>
     Object.values(charts)
-      .filter(chart => chart.chartStatus === 'rendered')
-      .map(chart => chart.id),
+      .filter((chart: any) => chart.chartStatus === 'rendered')
+      .map((chart: any) => chart.id),
   );
 
 const useRenderedChartIds = () => {

@@ -173,7 +173,7 @@ export const validateRefreshFrequency = (
   frequency: number,
   refreshLimit?: number,
 ): string[] => {
-  const errors = [];
+  const errors: string[] = [];
   const normalizedLimit = normalizeRefreshLimitSeconds(refreshLimit);
   if (normalizedLimit && frequency > 0 && frequency < normalizedLimit) {
     errors.push(

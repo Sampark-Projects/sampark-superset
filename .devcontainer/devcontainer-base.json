@@ -1,5 +1,5 @@
 {
-  "name": "Apache Superset Development",
+  "name": "Apache Sampark Development",
   // Keep this in sync with the base image in Dockerfile (ARG PY_VER)
   // Using the same base as Dockerfile, but non-slim for dev tools
   "image": "python:3.11.13-bookworm",

@@ -662,7 +662,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title="Welcome"
-      description="Community website for Apache Superset™, a data visualization and data exploration platform"
+      description="Community website for Apache Sampark™, a data visualization and data exploration platform"
       wrapperClassName="under-navbar"
     >
       <StyledMain>
@@ -674,7 +674,7 @@ export default function Home(): JSX.Element {
               alt="Superset mark"
             />
             <div className="info-text">
-              Apache Superset&trade; is an open-source modern data exploration
+              Apache Sampark&trade; is an open-source modern data exploration
               and visualization platform.
             </div>
             <img src="/img/community/line.png" alt="line" />

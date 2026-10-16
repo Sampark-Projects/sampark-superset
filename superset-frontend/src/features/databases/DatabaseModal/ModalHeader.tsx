@@ -60,7 +60,7 @@ const irregularDocumentationLinks = {
     'https://superset.apache.org/user-docs/databases/supported/clickhouse',
 };
 
-const documentationLink = (engine: string | undefined) => {
+export const documentationLink = (engine: string | undefined) => {
   if (!engine) return null;
 
   if (supersetTextDocs) {
@@ -123,17 +123,6 @@ const ModalHeader = ({
       <Typography.Title level={4}>
         {t('Enter Primary Credentials')}
       </Typography.Title>
-      <p className="helper-bottom">
-        {t('Need help? Learn how to connect your database')}{' '}
-        <a
-          href={supersetTextDocs?.default || DOCUMENTATION_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t('here')}
-        </a>
-        .
-      </p>
     </StyledFormHeader>
   );
 
@@ -171,16 +160,6 @@ const ModalHeader = ({
             dbModelName: dbModel.name,
           })}
         </Typography.Title>
-        <p className="helper-bottom">
-          {t('Need help? Learn more about')}{' '}
-          <a
-            href={documentationLink(db?.engine)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t('connecting to %(dbModelName)s', { dbModelName: dbModel.name })}.
-          </a>
-        </p>
       </StyledFormHeader>
     </StyledStickyHeader>
   );

@@ -257,7 +257,7 @@ def test_manifest_body_is_valid_json() -> None:
     response = client.get("/pwa-manifest.json")
     parsed = json.loads(response.data)
     assert isinstance(parsed, dict)
-    assert parsed["name"] == "Apache Superset"
+    assert parsed["name"] == "Apache Sampark"
 
 
 def test_manifest_route_under_subdir_config() -> None:

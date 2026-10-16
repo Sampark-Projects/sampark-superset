@@ -31,7 +31,7 @@ export const useExploreMetadataBar = (
     if (!metadata) {
       return null;
     }
-    const items = [];
+    const items: any[] = [];
     if (metadata.dashboards) {
       items.push({
         type: MetadataType.Dashboards as const,

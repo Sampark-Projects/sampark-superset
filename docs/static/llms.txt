@@ -1,6 +1,6 @@
-# Apache Superset
+# Apache Sampark
 
-> Apache Superset is a modern, enterprise-ready business intelligence web application. It provides a no-code interface for building charts, a powerful SQL editor, support for nearly any SQL database, and beautiful visualizations. Superset is open source under the Apache 2.0 license.
+> Apache Sampark is a modern, enterprise-ready business intelligence web application. It provides a no-code interface for building charts, a powerful SQL editor, support for nearly any SQL database, and beautiful visualizations. Superset is open source under the Apache 2.0 license.
 
 Superset is designed for data exploration and visualization at scale. It features a lightweight semantic layer, configurable caching, extensible security with RBAC, a REST API for programmatic access, and a cloud-native architecture.
 
@@ -46,7 +46,7 @@ Superset is designed for data exploration and visualization at scale. It feature
 
 ## Contributing
 
-- [Contributing Guide](https://superset.apache.org/docs/contributing/contributing): How to contribute to Apache Superset
+- [Contributing Guide](https://superset.apache.org/docs/contributing/contributing): How to contribute to Apache Sampark
 - [Development Environment](https://superset.apache.org/docs/contributing/development): Set up a local development environment
 - [Guidelines](https://superset.apache.org/docs/contributing/guidelines): Code style, testing, and PR guidelines
 - [How-Tos](https://superset.apache.org/docs/contributing/howtos): Common development tasks and recipes

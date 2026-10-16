@@ -389,7 +389,7 @@ export default function transformProps(
     {
       ...seriesProps,
       name: ASSIST_MARK,
-      data: assistData,
+      data: assistData as any,
     },
     {
       ...seriesProps,
@@ -401,7 +401,7 @@ export default function transformProps(
       itemStyle: {
         color: rgbToHex(increaseColor.r, increaseColor.g, increaseColor.b),
       },
-      data: increaseData,
+      data: increaseData as any,
     },
     {
       ...seriesProps,
@@ -413,7 +413,7 @@ export default function transformProps(
       itemStyle: {
         color: rgbToHex(decreaseColor.r, decreaseColor.g, decreaseColor.b),
       },
-      data: decreaseData,
+      data: decreaseData as any,
     },
     {
       ...seriesProps,
@@ -425,7 +425,7 @@ export default function transformProps(
       itemStyle: {
         color: rgbToHex(totalColor.r, totalColor.g, totalColor.b),
       },
-      data: totalData,
+      data: totalData as any,
     },
   ];
 

@@ -23,7 +23,7 @@ import { CHART_TYPE } from './componentTypes';
 
 const chartLayoutItemsSelector = createSelector(
   (state: RootState) => state.dashboardLayout.present,
-  layout => Object.values(layout).filter(item => item?.type === CHART_TYPE),
+  layout => Object.values(layout).filter((item: any) => item?.type === CHART_TYPE),
 );
 
-export const useChartLayoutItems = () => useSelector(chartLayoutItemsSelector);
+export const useChartLayoutItems = (): any[] => useSelector(chartLayoutItemsSelector);

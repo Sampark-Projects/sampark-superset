@@ -115,7 +115,7 @@ function AllEntities() {
     label: t('dataset name'),
   };
 
-  const items = [];
+  const items: any[] = [];
   if (tag?.description) {
     const description: Description = {
       type: MetadataType.Description,

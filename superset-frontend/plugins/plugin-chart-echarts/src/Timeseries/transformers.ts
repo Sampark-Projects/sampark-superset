@@ -603,8 +603,8 @@ export function transformIntervalAnnotation(
           opacity: 0.8,
         },
       } as ItemStyleOption,
-      label: intervalLabel,
-      data: allIntervalData,
+      label: intervalLabel as any,
+      data: allIntervalData as any,
     },
   });
 
@@ -694,8 +694,8 @@ export function transformEventAnnotation(
       silent: false,
       symbol: 'none',
       lineStyle,
-      label: eventLabel,
-      data: allEventData,
+      label: eventLabel as any,
+      data: allEventData as any,
     },
   });
 

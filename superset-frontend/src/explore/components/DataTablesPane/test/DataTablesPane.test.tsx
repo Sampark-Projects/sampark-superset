@@ -151,7 +151,7 @@ describe('DataTablesPane', () => {
         ],
       },
     );
-    // @ts-expect-error
+    // 
     global.featureFlags = {
       [FeatureFlag.GranularExportControls]: true,
     };
@@ -175,7 +175,7 @@ describe('DataTablesPane', () => {
     const value = await copyToClipboardSpy.mock.calls[0][0]();
     expect(value).toBe('__timestamp\tgenre\n2009-01-01 00:00:00\tAction\n');
     copyToClipboardSpy.mockRestore();
-    // @ts-expect-error
+    // 
     global.featureFlags = {};
     fetchMock.clearHistory().removeRoutes();
   });
@@ -195,7 +195,7 @@ describe('DataTablesPane', () => {
         ],
       },
     );
-    // @ts-expect-error
+    // 
     global.featureFlags = {
       [FeatureFlag.GranularExportControls]: true,
     };
@@ -225,7 +225,7 @@ describe('DataTablesPane', () => {
     await userEvent.click(copyButton);
     expect(copyToClipboardSpy).not.toHaveBeenCalled();
     copyToClipboardSpy.mockRestore();
-    // @ts-expect-error
+    // 
     global.featureFlags = {};
     fetchMock.clearHistory().removeRoutes();
   });
@@ -261,7 +261,7 @@ describe('DataTablesPane', () => {
   });
 
   test('Displaying the data pane is under featureflag', () => {
-    // @ts-expect-error
+    // 
     global.featureFlags = {
       [FeatureFlag.DatapanelClosedByDefault]: true,
     };

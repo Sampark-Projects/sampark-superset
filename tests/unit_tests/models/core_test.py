@@ -586,7 +586,7 @@ def test_get_sqla_engine(mocker: MockerFixture) -> None:
 
     create_engine_mock.assert_called_with(
         make_url("trino:///"),
-        connect_args={"source": "Apache Superset"},
+        connect_args={"source": "Apache Sampark"},
         future=True,
     )
     listen.assert_any_call(
@@ -749,7 +749,7 @@ def test_get_sqla_engine_user_impersonation(mocker: MockerFixture) -> None:
 
     create_engine_mock.assert_called_with(
         make_url("trino:///"),
-        connect_args={"user": "alice", "source": "Apache Superset"},
+        connect_args={"user": "alice", "source": "Apache Sampark"},
         future=True,
     )
     listen.assert_any_call(
@@ -814,7 +814,7 @@ def test_get_sqla_engine_user_impersonation_email(mocker: MockerFixture) -> None
 
     create_engine_mock.assert_called_with(
         make_url("trino:///"),
-        connect_args={"user": "alice.doe", "source": "Apache Superset"},
+        connect_args={"user": "alice.doe", "source": "Apache Sampark"},
         future=True,
     )
     listen.assert_any_call(

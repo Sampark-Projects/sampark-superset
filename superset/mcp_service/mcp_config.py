@@ -60,7 +60,7 @@ WEBDRIVER_BASEURL_USER_FRIENDLY = WEBDRIVER_BASEURL
 # deployment should override this in superset_config.py to point users at the
 # right channel (e.g. an internal support address, a vendor support team).
 # When unset, the tool falls back to a neutral default that points at the
-# user's Superset administrator and the Apache Superset issue tracker.
+# user's Superset administrator and the Apache Sampark issue tracker.
 MCP_BUG_REPORT_CONTACT: str | None = None
 
 # MCP Debug mode - shows suppressed initialization output in stdio mode

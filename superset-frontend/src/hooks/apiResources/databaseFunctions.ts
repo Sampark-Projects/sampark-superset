@@ -31,7 +31,7 @@ type FunctionNamesResponse = {
 
 const databaseFunctionApi = api.injectEndpoints({
   endpoints: builder => ({
-    databaseFunctions: builder.query<string[], FetchDataFunctionsQueryParams>({
+    databaseFunctions: builder.query({
       providesTags: ['DatabaseFunctions'],
       query: ({ dbId }) => ({
         endpoint: `/api/v1/database/${dbId}/function_names/`,

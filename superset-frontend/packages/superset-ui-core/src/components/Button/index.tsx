@@ -166,7 +166,7 @@ function ButtonInner(props: ButtonProps, ref: Ref<HTMLElement>) {
 
   const element = children as ReactElement;
 
-  let renderedChildren = [];
+  let renderedChildren: any[] = [];
 
   if (element && element.type === Fragment) {
     renderedChildren = Children.toArray(element.props.children);

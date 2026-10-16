@@ -74,6 +74,8 @@ const highlightText = (text: string, keyword: string): React.ReactNode => {
 };
 
 export interface TreeNodeRendererProps extends NodeRendererProps<TreeNodeData> {
+  node: any;
+  style: any;
   manuallyOpenedNodes: Record<string, boolean>;
   loadingNodes: Record<string, boolean>;
   searchTerm: string;

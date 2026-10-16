@@ -30,7 +30,7 @@ export default {
     docs: {
       description: {
         component:
-          'Icon library for Apache Superset. Contains over 200 icons based on Ant Design icons with consistent sizing and theming support.',
+          'Icon library for Apache Sampark. Contains over 200 icons based on Ant Design icons with consistent sizing and theming support.',
       },
     },
   },

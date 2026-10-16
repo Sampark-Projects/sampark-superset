@@ -17,13 +17,13 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-# LLM Context Guide for Apache Superset Documentation
+# LLM Context Guide for Apache Sampark Documentation
 
-This guide helps LLMs work with the Apache Superset documentation site built with Docusaurus 3.
+This guide helps LLMs work with the Apache Sampark documentation site built with Docusaurus 3.
 
 ## 📍 Current Directory Context
 
-You are currently in the `/docs` subdirectory of the Apache Superset repository. When referencing files from the main codebase, use `../` to access the parent directory.
+You are currently in the `/docs` subdirectory of the Apache Sampark repository. When referencing files from the main codebase, use `../` to access the parent directory.
 
 ```
 /Users/evan_1/GitHub/superset/     # Main repository root
@@ -316,7 +316,7 @@ Use relative paths for internal documentation:
 Always use full URLs:
 
 ```markdown
-[Apache Superset GitHub](https://github.com/apache/superset)
+[Apache Sampark GitHub](https://github.com/apache/superset)
 ```
 
 ### Linking to Code

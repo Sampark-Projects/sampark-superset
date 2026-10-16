@@ -76,7 +76,6 @@ describe('layerUtil', () => {
       // @ts-expect-error
       expect(style!.length).toEqual(3);
 
-      // @ts-expect-error upgrade `ol` package for better type of StyleLike type.
       const colorAtLayer = style![2].getFill().getColor();
       expect(colorAtLayer).toEqual(fillColor);
     });

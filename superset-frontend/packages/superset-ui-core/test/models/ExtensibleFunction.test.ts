@@ -54,7 +54,6 @@ describe('ExtensibleFunction', () => {
     x: unknown;
 
     constructor(x: unknown) {
-      // @ts-expect-error
       super(function customName() {
         // @ts-expect-error
         return customName.x;

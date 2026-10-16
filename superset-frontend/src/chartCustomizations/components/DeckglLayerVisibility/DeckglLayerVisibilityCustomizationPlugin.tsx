@@ -52,9 +52,9 @@ const selectAllLayerIds = createSelector(
     (state: SliceEntitiesState) =>
       state.sliceEntities?.slices || (EMPTY_OBJECT as Record<number, Slice>),
   ],
-  slices => {
+  (slices): number[] => {
     const ids: number[] = [];
-    Object.values(slices).forEach(slice => {
+    Object.values(slices).forEach((slice: any) => {
       if (slice.form_data?.viz_type === 'deck_multi') {
         const deckSlices = slice.form_data.deck_slices as number[] | undefined;
         if (deckSlices && Array.isArray(deckSlices)) {
@@ -89,7 +89,7 @@ export default function DeckglLayerVisibilityCustomizationPlugin(
   }, [dataMask]);
 
   const { layers: apiLayers, isLoading: isLoadingMetadata } =
-    useDeckLayerMetadata(allLayerIds);
+    useDeckLayerMetadata(allLayerIds as number[]);
 
   const allLayerIdsFromApi = useMemo(
     () => apiLayers.map(layer => layer.sliceId),

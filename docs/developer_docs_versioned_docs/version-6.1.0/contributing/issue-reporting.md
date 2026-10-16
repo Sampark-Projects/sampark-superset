@@ -24,7 +24,7 @@ under the License.
 
 # Issue Reporting
 
-Learn how to effectively report bugs and request features for Apache Superset.
+Learn how to effectively report bugs and request features for Apache Sampark.
 
 ## Before Opening an Issue
 

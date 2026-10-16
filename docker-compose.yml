@@ -107,8 +107,8 @@ services:
         required: false
     image: postgres:17
     restart: unless-stopped
-    ports:
-      - "127.0.0.1:${DATABASE_PORT:-5432}:5432"
+    # ports:
+    #   - "127.0.0.1:${DATABASE_PORT:-5433}:5432"
     volumes:
       - db_home:/var/lib/postgresql/data
       - ./docker/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
@@ -160,7 +160,7 @@ services:
 
       # Mount config file. Create your own docker/superset-websocket/config.json
       # for custom settings, then point to it here. Do not use this example in production.
-      - ./docker/superset-websocket/config.example.json:/home/superset-websocket/config.json:ro
+      - ./docker/superset-websocket/config.json:/home/superset-websocket/config.json:ro
     environment:
       - PORT=8080
       - REDIS_HOST=redis
@@ -199,7 +199,7 @@ services:
     environment:
       # set this to false if you have perf issues running the npm i; npm run dev in-docker
       # if you do so, you have to run this manually on the host, which should perform better!
-      BUILD_SUPERSET_FRONTEND_IN_DOCKER: true
+      BUILD_SUPERSET_FRONTEND_IN_DOCKER: false
       NPM_RUN_PRUNE: false
       SCARF_ANALYTICS: "${SCARF_ANALYTICS:-}"
       # configuring the dev-server to use the host.docker.internal to connect to the backend

@@ -178,7 +178,7 @@ function generateCellFormData(
   }
 
   // Set metrics based on row/column configuration
-  const metrics = [];
+  const metrics: any[] = [];
 
   if (rowConfig && rowIndex !== null && rowConfig.mode === 'metrics') {
     const metric = rowConfig.metrics?.[rowIndex];

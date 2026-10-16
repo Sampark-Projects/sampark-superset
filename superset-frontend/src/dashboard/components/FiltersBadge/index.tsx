@@ -241,7 +241,7 @@ export const FiltersBadge = ({ chartId }: FiltersBadgeProps) => {
         dataMask,
         chartId,
         chart,
-        chartLayoutItems,
+        chartLayoutItems as any,
         chartConfiguration,
       );
       setNativeIndicators(newIndicators);

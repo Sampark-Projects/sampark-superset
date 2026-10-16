@@ -75,7 +75,7 @@ Note that:
 - You can login with admin/admin
 
 :::note
-Installing and building Node modules for Apache Superset inside `superset-node` can take a
+Installing and building Node modules for Apache Sampark inside `superset-node` can take a
 significant amount of time. This is normal due to the size of the dependencies. Please be
 patient while the process completes, as long wait times do not indicate an issue with your setup.
 If delays seem excessive, check your internet connection or system resources.
@@ -187,7 +187,7 @@ GitHub Codespaces provides a complete, pre-configured development environment in
 
 :::info
 We're grateful to GitHub for providing this excellent cloud development service that makes
-contributing to Apache Superset more accessible to developers worldwide.
+contributing to Apache Sampark more accessible to developers worldwide.
 :::
 
 ### Getting Started with Codespaces

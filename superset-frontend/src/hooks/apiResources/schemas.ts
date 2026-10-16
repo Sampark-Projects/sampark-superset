@@ -39,7 +39,7 @@ type Params = Omit<FetchSchemasQueryParams, 'forceRefresh'>;
 
 const schemaApi = api.injectEndpoints({
   endpoints: builder => ({
-    schemas: builder.query<SchemaOption[], FetchSchemasQueryParams>({
+    schemas: builder.query({
       providesTags: [{ type: 'Schemas', id: 'LIST' }],
       query: ({ dbId, catalog, forceRefresh }) => ({
         endpoint: `/api/v1/database/${dbId}/schemas/`,

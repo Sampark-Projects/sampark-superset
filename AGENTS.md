@@ -1,6 +1,6 @@
-# LLM Context Guide for Apache Superset
+# LLM Context Guide for Apache Sampark
 
-Apache Superset is a data visualization platform with Flask/Python backend and React/TypeScript frontend.
+Apache Sampark is a data visualization platform with Flask/Python backend and React/TypeScript frontend.
 
 ## Run Pre-commit Before Pushing
 
@@ -61,7 +61,7 @@ Common pre-commit failures:
 
 ## Security and Threat Model
 
-Before evaluating any code path for security issues, read [`SECURITY.md`](SECURITY.md). It is the canonical, authoritative source for Apache Superset's security model and is referenced by both human reporters and automated scanners.
+Before evaluating any code path for security issues, read [`SECURITY.md`](SECURITY.md). It is the canonical, authoritative source for Apache Sampark's security model and is referenced by both human reporters and automated scanners.
 
 In short, the test for whether a finding is in scope is one question:
 

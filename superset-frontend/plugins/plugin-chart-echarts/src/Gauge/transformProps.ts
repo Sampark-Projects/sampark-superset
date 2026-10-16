@@ -354,7 +354,7 @@ export default function transformProps(
       radius:
         Math.min(width, height) / 2 - axisLabelDistance - axisTickDistance,
       center: ['50%', '55%'],
-      data: transformedData,
+      data: transformedData as any,
     },
   ];
 

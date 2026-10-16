@@ -73,7 +73,7 @@ export type InitialState = {
 
 const initialStateApi = api.injectEndpoints({
   endpoints: builder => ({
-    sqlLabInitialState: builder.query<InitialState, void>({
+    sqlLabInitialState: builder.query({
       providesTags: ['SqlLabInitialState'],
       query: () => ({
         endpoint: `/api/v1/sqllab/`,

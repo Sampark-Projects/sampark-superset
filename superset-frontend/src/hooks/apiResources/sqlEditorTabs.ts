@@ -18,7 +18,7 @@
  */
 import { pickBy } from 'lodash-es';
 import { QueryEditor, LatestQueryEditorVersion } from 'src/SqlLab/types';
-import { api, JsonResponse } from './queryApi';
+import { api } from './queryApi';
 
 export type EditorMutationParams = {
   queryEditor: QueryEditor;
@@ -27,7 +27,7 @@ export type EditorMutationParams = {
 
 const sqlEditorApi = api.injectEndpoints({
   endpoints: builder => ({
-    updateSqlEditorTab: builder.mutation<JsonResponse, EditorMutationParams>({
+    updateSqlEditorTab: builder.mutation({
       query: ({
         queryEditor: {
           version = LatestQueryEditorVersion,
@@ -67,14 +67,14 @@ const sqlEditorApi = api.injectEndpoints({
         ),
       }),
     }),
-    updateCurrentSqlEditorTab: builder.mutation<string, string | number>({
+    updateCurrentSqlEditorTab: builder.mutation({
       query: queryEditorId => ({
         method: 'POST',
         endpoint: encodeURI(`/tabstateview/${queryEditorId}/activate`),
         transformResponse: () => queryEditorId,
       }),
     }),
-    deleteSqlEditorTab: builder.mutation<void, string | number>({
+    deleteSqlEditorTab: builder.mutation({
       query: queryEditorId => ({
         method: 'DELETE',
         endpoint: encodeURI(`/tabstateview/${queryEditorId}`),

@@ -187,7 +187,7 @@ export const CustomizationsBadge = ({ chartId }: CustomizationsBadgeProps) => {
 
   const chartDataset = useSelector(selectChartDataset);
   const chartFormData = useSelector(selectChartFormData);
-  const chartType = chartFormData?.viz_type;
+  const chartType = (chartFormData as any)?.viz_type;
 
   const applicableCustomizations = useMemo(() => {
     if (!chartDataset) {

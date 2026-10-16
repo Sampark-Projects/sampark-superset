@@ -35,10 +35,7 @@ export type ValidationResult = {
 
 const queryValidationApi = api.injectEndpoints({
   endpoints: builder => ({
-    queryValidations: builder.query<
-      ValidationResult[],
-      FetchValidationQueryParams
-    >({
+    queryValidations: builder.query({
       providesTags: ['QueryValidations'],
       query: ({ dbId, catalog, schema, sql, templateParams }) => {
         let template_params = templateParams;

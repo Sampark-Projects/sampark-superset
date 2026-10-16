@@ -24,7 +24,7 @@ under the License.
 
 # Developer Docs
 
-Welcome to the Apache Superset Developer Docs - your comprehensive resource for contributing to and extending Apache Superset.
+Welcome to the Apache Sampark Developer Docs - your comprehensive resource for contributing to and extending Apache Sampark.
 
 ## Quick Start
 
@@ -52,7 +52,7 @@ Comprehensive testing strategies for Superset development. This section covers f
 
 ### Contributing to Superset
 
-Everything you need to contribute to the Apache Superset project. This section includes community guidelines, development environment setup, pull request processes, code review workflows, issue reporting guidelines, and Apache release procedures. You'll also find style guidelines for both frontend and backend development.
+Everything you need to contribute to the Apache Sampark project. This section includes community guidelines, development environment setup, pull request processes, code review workflows, issue reporting guidelines, and Apache release procedures. You'll also find style guidelines for both frontend and backend development.
 
 ## Development Resources
 
@@ -147,4 +147,4 @@ Everything you need to contribute to the Apache Superset project. This section i
 
 ---
 
-Welcome to the Apache Superset community! We're excited to have you contribute.
+Welcome to the Apache Sampark community! We're excited to have you contribute.

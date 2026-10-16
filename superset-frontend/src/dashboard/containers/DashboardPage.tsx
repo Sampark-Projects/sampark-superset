@@ -428,7 +428,7 @@ export const DashboardPage: FC<PageProps> = ({ idOrSlug }: PageProps) => {
               <AutoRefreshProvider>
                 <DashboardContainer
                   activeFilters={activeFilters as ActiveFilters}
-                  ownDataCharts={relevantDataMask}
+                  ownDataCharts={relevantDataMask as unknown as import('@superset-ui/core').JsonObject}
                 >
                   {DashboardBuilderComponent}
                 </DashboardContainer>

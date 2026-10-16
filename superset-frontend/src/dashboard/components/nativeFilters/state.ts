@@ -64,7 +64,7 @@ export const selectFilterConfiguration: (
   },
 );
 
-export function useFilterConfiguration() {
+export function useFilterConfiguration(): (Filter | Divider)[] {
   return useSelector(selectFilterConfiguration);
 }
 
@@ -90,8 +90,8 @@ const selectDashboardChartIds = createSelector(
   (dashboardLayout): Set<number> =>
     new Set(
       Object.values(dashboardLayout)
-        .filter(item => item.type === CHART_TYPE && item.meta?.chartId)
-        .map(item => item.meta.chartId!),
+        .filter((item: any) => item.type === CHART_TYPE && item.meta?.chartId)
+        .map((item: any) => item.meta.chartId!),
     ),
 );
 
@@ -127,7 +127,7 @@ const selectChartCustomizationConfiguration = createSelector(
   },
 );
 
-export function useChartCustomizationConfiguration() {
+export function useChartCustomizationConfiguration(): ChartCustomizationConfiguration {
   return useSelector(selectChartCustomizationConfiguration);
 }
 
@@ -155,7 +155,7 @@ export function useChartCustomizationConfigMap() {
       >(
         (
           acc: Record<string, ChartCustomization | ChartCustomizationDivider>,
-          chartCustomization: ChartCustomization | ChartCustomizationDivider,
+          chartCustomization: any,
         ) => {
           acc[chartCustomization.id] = chartCustomization;
           return acc;
@@ -197,7 +197,7 @@ function useSelectChartTabParents() {
     () =>
       dashboardLayout
         ? Object.values(dashboardLayout).filter(
-            item => item.type === CHART_TYPE,
+            (item: any) => item.type === CHART_TYPE,
           )
         : [],
     [dashboardLayout],

@@ -19,7 +19,12 @@
 const zlib = require('zlib');
 const { Writable } = require('stream');
 const { pipeline } = require('stream/promises');
-const { ZSTDDecompress } = require('simple-zstd');
+let ZSTDDecompress;
+try {
+  ZSTDDecompress = require('simple-zstd').ZSTDDecompress;
+} catch (e) {
+  console.warn('simple-zstd not available. Zstandard compression will not be supported in proxy.');
+}
 
 const yargs = require('yargs');
 const { hideBin } = require('yargs/helpers');

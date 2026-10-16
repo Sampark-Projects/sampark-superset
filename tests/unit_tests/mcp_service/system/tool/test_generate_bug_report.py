@@ -248,7 +248,7 @@ class TestGenerateBugReportViaMCP:
 
         assert "report" in data
         # Default neutral contact when MCP_BUG_REPORT_CONTACT is unset.
-        assert "Apache Superset" in data["support_contact"]
+        assert "Apache Sampark" in data["support_contact"]
         report = data["report"]
 
         # Structure

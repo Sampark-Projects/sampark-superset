@@ -35,7 +35,7 @@ interface FAQSchemaProps {
  *
  * @example
  * <FAQSchema faqs={[
- *   { question: "What is Superset?", answer: "Apache Superset is..." },
+ *   { question: "What is Superset?", answer: "Apache Sampark is..." },
  *   { question: "How do I install it?", answer: "You can install via..." }
  * ]} />
  */

@@ -102,7 +102,7 @@ type Params = Omit<FetchTablesQueryParams, 'forceRefresh'> & {
 
 const tableApi = api.injectEndpoints({
   endpoints: builder => ({
-    tables: builder.query<Data, FetchTablesQueryParams>({
+    tables: builder.query({
       providesTags: ['Tables'],
       query: ({ dbId, catalog, schema, forceRefresh }) => ({
         endpoint: `/api/v1/database/${dbId ?? 'undefined'}/tables/`,
@@ -122,7 +122,7 @@ const tableApi = api.injectEndpoints({
         schema,
       }),
     }),
-    tableMetadata: builder.query<TableMetaData, FetchTableMetadataQueryParams>({
+    tableMetadata: builder.query({
       providesTags: result =>
         result
           ? [
@@ -139,10 +139,7 @@ const tableApi = api.injectEndpoints({
         transformResponse: ({ json }: TableMetadataResponse) => json,
       }),
     }),
-    tableExtendedMetadata: builder.query<
-      TableExtendedMetadata,
-      FetchTableMetadataQueryParams
-    >({
+    tableExtendedMetadata: builder.query({
       query: ({ dbId, catalog, schema, table }) => ({
         endpoint: `/api/v1/database/${dbId}/table_metadata/extra/${toQueryString(
           { name: table, catalog, schema },

@@ -24,7 +24,7 @@ under the License.
 
 # Submitting Pull Requests
 
-Learn how to create and submit high-quality pull requests to Apache Superset.
+Learn how to create and submit high-quality pull requests to Apache Sampark.
 
 ## Before You Start
 

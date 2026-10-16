@@ -290,7 +290,7 @@ export default function transformProps(
         textBorderColor: 'transparent',
         fontSize: LABEL_FONTSIZE,
       },
-      data: transformedData,
+      data: transformedData as any,
     },
   ];
 

@@ -570,7 +570,7 @@ const PropertiesModal = ({
         key: 'basic',
         name: t('General information'),
         validator: () => {
-          const errors = [];
+          const errors: string[] = [];
           const values = form.getFieldsValue();
 
           // Check validation - only add if title is empty

@@ -1773,7 +1773,7 @@ const AlertReportModal: FunctionComponent<AlertReportModalProps> = ({
   };
 
   const validateGeneralSection = () => {
-    const errors = [];
+    const errors: string[] = [];
     if (!currentAlert?.name?.length) {
       errors.push(TRANSLATIONS.NAME_ERROR_TEXT);
     }
@@ -1783,7 +1783,7 @@ const AlertReportModal: FunctionComponent<AlertReportModalProps> = ({
     updateValidationStatus(Sections.General, errors);
   };
   const validateContentSection = () => {
-    const errors = [];
+    const errors: string[] = [];
     if (
       !(
         (contentType === ContentType.Dashboard && !!currentAlert?.dashboard) ||
@@ -1817,7 +1817,7 @@ const AlertReportModal: FunctionComponent<AlertReportModalProps> = ({
     updateValidationStatus(Sections.Content, errors);
   };
   const validateAlertSection = () => {
-    const errors = [];
+    const errors: string[] = [];
     if (!currentAlert?.database) {
       errors.push(TRANSLATIONS.DATABASE_ERROR_TEXT);
     }
@@ -1837,7 +1837,7 @@ const AlertReportModal: FunctionComponent<AlertReportModalProps> = ({
   };
 
   const validateScheduleSection = () => {
-    const errors = [];
+    const errors: string[] = [];
     if (!currentAlert?.crontab?.length) {
       errors.push(TRANSLATIONS.CRONTAB_ERROR_TEXT);
     }
@@ -1849,7 +1849,7 @@ const AlertReportModal: FunctionComponent<AlertReportModalProps> = ({
   };
 
   const validateNotificationSection = () => {
-    const errors = [];
+    const errors: string[] = [];
     const hasErrors = !checkNotificationSettings();
 
     if (hasErrors) {

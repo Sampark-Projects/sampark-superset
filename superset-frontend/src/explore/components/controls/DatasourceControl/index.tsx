@@ -371,7 +371,7 @@ export default function DatasourceControl({
     datasourceKey: `${datasource.id}__${datasource.type}`,
     sql: datasource.sql,
   };
-  const defaultDatasourceMenuItems = [];
+  const defaultDatasourceMenuItems: any[] = [];
   if (isEditable && !isMissingDatasource) {
     defaultDatasourceMenuItems.push({
       key: EDIT_DATASET,
@@ -419,7 +419,7 @@ export default function DatasourceControl({
     <Menu onClick={handleMenuItemClick} items={defaultDatasourceMenuItems} />
   );
 
-  const queryDatasourceMenuItems = [
+  const queryDatasourceMenuItems: any[] = [
     {
       key: QUERY_PREVIEW,
       label: (
